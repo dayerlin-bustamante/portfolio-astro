@@ -1,0 +1,72 @@
+[
+    {
+        "title": "App Cooking",
+        "description": "This project was made with Angular and firebase",
+        "img": "/img/cooking-app.png",
+        "url": "https://cooking-shopping-app.netlify.app",
+        "date": "2023"
+    },
+    {
+        "title": "Credit Card",
+        "description": "This project was made with Angular and tailwind",
+        "img": "/img/credit-card.webp",
+        "url": "https://credit-card-day.netlify.app/",
+        "date": "2023"
+    },
+    {
+        "title": "Insurance Car",
+        "description": "Quote car using localstorages to show your latest comparison.",
+        "img": "/img/cotiza-seguro-coche.webp",
+        "url": "https://cotiza-seguro-coche.netlify.app",
+        "date": "2022"
+    },
+    {
+        "title": "Poppling",
+        "description": "App Shopping cart made in vanilla js using localstorages",
+        "img": "/img/poppling.webp",
+        "url": "https://github.com/dayerlin-bustamante/carrito-compras",
+        "date": "2022"
+    },
+    {
+        "title": "Timezone",
+        "description": "Project to show the different time zones of latam countries",
+        "img": "/img/timezone.png",
+        "url": "https://timezones-latam.netlify.app",
+        "date": "2022"
+    },
+    {
+        "title": "Landing Rastreator",
+        "description": "Layout of the opinions page for the visualization of comments ekomi.",
+        "img": "/img/opiniones-rastreator.webp",
+        "url": "https://www.rastreator.com/opiniones-rastreator",
+        "date": "2022"
+    },
+    {
+        "title": "App Weather",
+        "description": "This project was made with vue (api composition) + vite.",
+        "img": "/img/weather-app.webp",
+        "url": "https://weather-app-day.netlify.app/",
+        "date": "2021"
+    },
+    {
+        "title": "App form validation",
+        "description": "form validation app made with tailwindcss and vite",
+        "img": "/img/app-form.webp",
+        "url": "https://github.com/dayerlin-bustamante/landing-form-validation",
+        "date": "2021"
+    },
+    {
+        "title": "Game Color",
+        "description": "Final project Powercoders and Hackaboss. (Html Css Js)",
+        "img": "/img/game-color.webp",
+        "url": "https://juego-adivinacolor.netlify.app/",
+        "date": "2021"
+    },
+    {
+        "title": "Web design/code",
+        "description": "First web page made with wordpress through the elementor editor.",
+        "img": "/img/decoryde.webp",
+        "url": "https://decoryde.com",
+        "date": "2019"
+    }
+]

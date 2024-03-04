@@ -1,0 +1,55 @@
+---
+export interface Props {
+    title: string,
+    url: string,
+    img:string,
+    description: string,
+    date: string
+}
+const {title, description, url, img, date} = Astro.props
+---
+<div class="card-project flex flex-col justify-between rounded-lg shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
+    <a href={url} class="relative block rounded-lg border border-gray-100 p-4 lg:p-8">
+        <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
+    
+        <div class="sm:flex sm:justify-between sm:gap-4">
+            <div>
+                <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
+                    {title}
+                </h3>
+                <!-- <p class="mt-1 text-xs font-medium text-gray-600">to practice</p> -->
+            </div>
+    
+            <img
+                alt="Image Project"
+                src={img}
+                class="h-24 w-36 rounded-lg object-cover shadow-sm"
+            />
+        </div>
+    
+        <div class="mt-4">
+            <p class="max-w-[40ch] text-sm text-gray-500">
+            {description}
+            </p>
+        </div>
+    
+        <dl class="mt-4 gap-4 sm:gap-6">
+            <div class="flex flex-col">
+                <dd class="text-xs text-gray-500">in {date}</dd>
+                <dt class="text-sm font-medium text-gray-600">Published</dt>
+            </div>
+        </dl>
+    </a>
+</div>
+
+<style>
+    .card-project {
+        min-width: 280px;
+        min-height: 266px;
+    }
+    @media (min-width: 700px) {
+        .card-project {
+            min-width: 350px;
+        }
+    }
+</style>

@@ -1,0 +1,168 @@
+
+<div class="banner-card">
+    <div class="meta">
+      <div class="photo" style="background-image: url(./public/dayphoto.webp)"></div>
+      <ul class="details">
+        <li class="author">Dayerlin Bustamante</li>
+        <li class="date">Jun. 30, 1994</li>
+      </ul>
+    </div>
+    <div class="description">
+        <p>I have +2 year of experience as a frontend developer, together with the team I manage the best results and optimize the process of each IT project.</p>
+        <a href="">day.devprograms@gmail.com</a>
+      <div class="container d-cv">
+        <a class="btn cv" target="_blank" href="https://padlet.com/Dayerlin_Bustamante/developerCV" role="button">Dowload CV</a>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<style>
+  
+.banner-card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    margin: 3rem auto;
+    background: white;
+    line-height: 1.4;
+    font-family: sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+.banner-card:hover .photo{
+    transform: scale(1.3) rotate(3deg);
+}
+.banner-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 238px;
+}
+.banner-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+}
+.banner-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+  
+.banner-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left .2s;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-size: .9rem;
+}
+.banner-card .details a {
+    text-decoration: dotted underline
+}
+.banner-card .details ul li {
+   display: inline-block;
+}
+.banner-card .details .author:before {
+    margin-right: 10px;
+}
+  
+.banner-card .details .date:before {
+    margin-right: 10px;
+}
+  
+.banner-card .details .tags ul:before{
+    content: "\f02b";
+    margin-right: 10px;
+}
+.banner-card .details .tags ul li {
+    margin-right: 2px;
+}
+.banner-card .details .tags ul li:first-child {
+    margin-left: -4px;
+}
+.banner-card .description {
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-card .description a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+.banner-card .description .d-cv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    margin: 0;
+    margin-top: 1rem;
+}
+.banner-card .description .d-cv .cv {
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #000000 0%, rgba(38, 5, 54, 0.8) 100%);
+    justify-content: center;
+}
+.banner-card p {
+      position: relative;
+      margin-bottom: 1rem;
+}  
+.banner-card:hover .details {
+    left: 0%;
+}
+
+@media (min-width: 640px) {
+    .banner-card {
+        flex-direction: row;
+        max-width: 585px;
+        margin: 5rem auto;
+    }
+    .banner-card .meta {
+        flex-basis: 40%;
+        height: auto;
+    }
+    .banner-card .description {
+        flex-basis: 60%;
+    }
+    .banner-card .description:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .banner-card .alt {
+        flex-direction: row-reverse;
+    }
+    .banner-card .description:before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg)
+    }
+    .banner-card .description .details { padding-left: 25px; }
+}
+.swiper-container {
+    position: relative;
+}
+
+
+</style>

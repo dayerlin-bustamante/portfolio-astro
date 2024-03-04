@@ -1,0 +1,34 @@
+---
+interface Props {
+    pagesTitle?: string,
+}
+const {pagesTitle} = Astro.props
+import Footer from '../components/footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Artículos, vídeos, recursos y tutoriales sobre Desarrollo Web, Frontend, JavaScript ☕️, React ⚛️, CSS 🎨 y Performance Web ⚡️">
+    <meta property="og:description" content="Artículos, vídeos, recursos y tutoriales sobre Desarrollo Web, Frontend, JavaScript ☕️, React ⚛️, CSS 🎨 y Performance Web ⚡️">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="instagram:creator" content="@dayerlin_bustamante">
+    <link rel="preload" as="image" href="../../public/logo.webp">
+    <link rel="canonical" href="https://dayerlin.com">
+    <link rel="shortcut icon" href="../../public/logo.webp" type="logotipo">
+    <title>Frontend Developer | {pagesTitle} </title>
+</head>
+<body>
+    <slot/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FEFCFF;
+        }
+    </style>
+</body>
+<Footer/>
+</html>
