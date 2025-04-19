@@ -1,0 +1,34 @@
+---
+interface Props {
+    pagesTitle?: string,
+}
+const {pagesTitle} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Artículos, vídeos, recursos y tutoriales sobre Desarrollo Web, Frontend, JavaScript ☕️, React ⚛️, CSS 🎨 y Performance Web ⚡️">
+    <meta property="og:description" content="Artículos, vídeos, recursos y tutoriales sobre Desarrollo Web, Frontend, JavaScript ☕️, React ⚛️, CSS 🎨 y Performance Web ⚡️">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="instagram:creator" content="@dayerlin_bustamante">
+    <link rel="preload" as="image" href="/images/logo.webp"/>
+    <link rel="canonical" href="https://dayerlin.com">
+    <link rel="shortcut icon" href="/images/logo.webp" type="logotipo">
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <title>Frontend Developer | {pagesTitle} </title>
+</head>
+<body class="p-4 sm:p-16 mx-auto max-w-screen-xxl grid grid-cols-1 md:grid-cols-3 gap-4">
+    <slot />
+    <style>
+        body {
+            font-family: "National Park", sans-serif;
+            font-optical-sizing: auto;
+            background-color: rgb(7, 9, 28);
+        }
+    </style>
+</body>  
+<!-- <Footer/> -->
+</html>
